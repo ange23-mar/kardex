@@ -6,19 +6,19 @@ spring:
   application:
     name: ms-kardex
 
-  # ====================================================================
-  # OPCIÓN 2: CONEXIÓN ORACLE DE TU COMPAÑERO (COMENTADA PARA FUTURO USO)
-  # ====================================================================
-  # datasource:
-  #   url: jdbc:oracle:thin:@localhost:1521:XE
-  #   username: SCHEMA_BODEGAS
-  #   password: FullStack-Bodega1
-  #   driver-class-name: oracle.jdbc.OracleDriver
+
   datasource:
-    url: jdbc:mysql://host.docker.internal:3306/db_ms_kardex
-    username: root
-    password: ""
-    driver-class-name: com.mysql.cj.jdbc.Driver
+     url: jdbc:oracle:thin:@localhost:1521:XE
+     username: SCHEMA_BODEGAS
+     password: FullStack-Bodega1
+     driver-class-name: oracle.jdbc.OracleDriver
+
+     #laragon
+  #datasource:
+   # url: jdbc:mysql://host.docker.internal:3306/db_ms_kardex
+    #username: root
+    #password: ""
+    #driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: update
